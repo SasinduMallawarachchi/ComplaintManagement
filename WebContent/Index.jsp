@@ -13,38 +13,44 @@
 </head>
 <body>
 
-<div class="container"> 
+<nav class="navbar navbar-dark bg-dark" style="justify-content: center">
+    <h3 style="color: white">ElectroGrid</h3>
+</nav>
+<br>
+<div class="container" style="max-width: 90%">
+<div style="text-align: center"> 
+	<h1>Complaint Management</h1>
+</div>	
 	<div class="row">  
-		<div class="col"> 
-			<h1>Complaint Management</h1>
+		<div class="col-4"> 
+			
 			<br>
 				<form id="formComplain" name="formComplain" method="post" action="Index.jsp">  
 					Customer Name:  
- 	 				<input id="customerName" name="customerName" type="text"  class="form-control form-control-sm">
+ 	 				<input id="customerName" name="customerName" type="text"  class="form-control">
 					<br>Customer Phone:   
-  					<input id="customerPNO" name="customerPNO" type="text" class="form-control form-control-sm" >   
+  					<input id="customerPNO" name="customerPNO" type="text" class="form-control">   
   					<br>Description:   
-  					<input id="description" name="description" type="text"  class="form-control form-control-sm">
+  					<input id="description" name="description" type="text"  class="form-control">
 					<br> 
-					
-					<div id="alertSuccess" class="alert alert-success"> </div>				
-			   		<div id="alertError" class="alert alert-danger"></div>
-			   		 
-					<input id="btnSave" name="btnSave" type="button" value="SAVE" class="btn btn-primary">  
+
+					<input id="btnSave" name="btnSave" type="button" value="SAVE" class="btn btn-info">  
 					<input type="hidden" id="hidCompIDSave" name="hidCompIDSave" value=""> 
 				</form>
+				<br>
 				
-				
-			   <br>
-				<div id="divCompGrid">
+				<div id="alertSuccess" class="alert alert-success"> </div>				
+			   	<div id="alertError" class="alert alert-danger"></div>	
+			    
+			</div>
+		
+			<div id="divCompGrid" class="col-8" style="text-align: center">
+					<br><br>
 					<%
 					ComplaintManagement compObj = new ComplaintManagement();
 						out.print(compObj.readComp());
 					%>
 				</div>
-				
-				 
-			</div>
 		</div>
 </div>
  

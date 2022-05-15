@@ -73,7 +73,7 @@ public class ComplaintManagement {
 			} 
 	 
 			// Prepare the html table to be displayed    
-			output = "<table border='1' class='table'><thead class='thead-dark'><th>customer Name</th><th>customer PNO</th><th>Description</th><th>Date</th><th>Update</th><th>Remove</th></thead>";
+			output = "<table  class='table table-hover table-bordered'><thead class='thead-dark'><th>customer Name</th><th>customer PNO</th><th>Description</th><th>Date</th><th>Update</th><th>Remove</th></thead>";
 	 
 			String query = "select * from complaint";    
 			Statement stmt = (Statement) con.createStatement();
@@ -96,7 +96,7 @@ public class ComplaintManagement {
 				output += "<td>" + date + "</td>";
 	 
 				// buttons     
-				output +="<td><input name='btnUpdate' type='button' value='Update' class='btnUpdate btn btn-secondary'></td>"       
+				output +="<td><input name='btnUpdate' type='button' value='Update' class='btnUpdate btn btn-success'></td>"       
 						+ "<td><input name='hidItemIDDelete' type='button' value='Remove' class='btnRemove btn btn-danger' data-cid='" + cID + "'>" + "</td></tr>"; 
 			
 			}
