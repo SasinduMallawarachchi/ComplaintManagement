@@ -25,6 +25,7 @@
     </plugins>
   </build>
    <dependencies>
+	   
 		<dependency>
 			<groupId>com.sun.jersey</groupId>
 			<artifactId>jersey-bundle</artifactId>
@@ -56,5 +57,6 @@
 			<artifactId>jsoup</artifactId>
 			<version>1.8.1</version>
 		</dependency>
-		</dependencies>        
+		</dependencies>
+	
 </project>
