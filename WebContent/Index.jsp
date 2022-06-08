@@ -22,8 +22,7 @@
 	<h1>Complaint Management</h1>
 </div>	
 	<div class="row">  
-		<div class="col-4"> 
-			
+		<div class="col-4"> 			
 			<br>
 				<form id="formComplain" name="formComplain" method="post" action="Index.jsp">  
 					Customer Name:  
@@ -40,17 +39,16 @@
 				<br>
 				
 				<div id="alertSuccess" class="alert alert-success"> </div>				
-			   	<div id="alertError" class="alert alert-danger"></div>	
-			    
+			   	<div id="alertError" class="alert alert-danger"></div>	   
 			</div>
 		
 			<div id="divCompGrid" class="col-8" style="text-align: center">
-					<br><br>
-					<%
+				<br><br>
+				<%
 					ComplaintManagement compObj = new ComplaintManagement();
-						out.print(compObj.readComp());
-					%>
-				</div>
+					out.print(compObj.readComp());
+				%>
+			</div>
 		</div>
 </div>
  
