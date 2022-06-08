@@ -16,6 +16,7 @@
 <nav class="navbar navbar-dark bg-dark" style="justify-content: center">
     <h3 style="color: white">ElectroGrid</h3>
 </nav>
+	
 <br>
 <div class="container" style="max-width: 90%">
 <div style="text-align: center"> 
