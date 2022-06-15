@@ -84,7 +84,6 @@ $(document).on("click", ".btnUpdate", function(event)
 }); 
 
 
-
 //REMOVE===========================================
 $(document).on("click", ".btnRemove", function(event) 
 {  
